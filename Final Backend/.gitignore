@@ -1,0 +1,25 @@
+# Java/Maven
+target/
+*.log
+
+# IntelliJ/VS Code
+.idea/
+.vscode/
+
+# Uploads / media
+uploads/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.7z
+
+# Frontend/build if copied
+node_modules/
+dist/
+build/
+
+# Secrets
+.env
+.env.*

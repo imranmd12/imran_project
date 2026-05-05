@@ -21,9 +21,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    # Grant execute permission to Maven wrapper
-    - name: Grant permission to mvnw
-      run: chmod +x mvnw
+    # # Grant execute permission to Maven wrapper
+    # - name: Grant permission to mvnw
+    #   run: chmod +x mvnw
     # Build the project (compile)
     - name: Build with Maven
-      run: ./mvnw clean compile
+      run: mvn clean install

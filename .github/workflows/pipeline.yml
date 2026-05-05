@@ -25,5 +25,39 @@ jobs:
     # - name: Grant permission to mvnw
     #   run: chmod +x mvnw
     # Build the project (compile)
-    - name: Build with Maven
+
+    - name: Build with Maven for ai-service
+      working-directory: ai-service
+      run: mvn clean install
+
+    - name: Build with Maven for api-gateway
+      working-directory: api-gateway
+      run: mvn clean install
+
+    - name: Build with Maven for auth-service
+      working-directory: auth-service
+      run: mvn clean install
+        
+    - name: Build with Maven for common-lib
+      working-directory: common-lib
+      run: mvn clean install
+        
+    - name: Build with Maven for discovery-service
+      working-directory: discovery-service
+      run: mvn clean install
+      
+    - name: Build with Maven for interaction-service
+      working-directory: interaction-service
+      run: mvn clean install
+
+    - name: Build with Maven for media-service
+      working-directory: media-service
+      run: mvn clean install
+        
+    - name: Build with Maven for post-service
+      working-directory: post-service
+      run: mvn clean install
+        
+    - name: Build with Maven for user-service
+      working-directory: user-service
       run: mvn clean install

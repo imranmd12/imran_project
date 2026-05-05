@@ -27,37 +27,37 @@ jobs:
     # Build the project (compile)
 
     - name: Build with Maven for ai-service
-      working-directory: ai-service
+      working-directory: Final Backend/ai-service
       run: mvn clean install
 
     - name: Build with Maven for api-gateway
-      working-directory: api-gateway
+      working-directory: Final Backend/api-gateway
       run: mvn clean install
 
     - name: Build with Maven for auth-service
-      working-directory: auth-service
+      working-directory: Final Backend/auth-service
       run: mvn clean install
         
     - name: Build with Maven for common-lib
-      working-directory: common-lib
+      working-directory: Final Backend/common-lib
       run: mvn clean install
         
     - name: Build with Maven for discovery-service
-      working-directory: discovery-service
+      working-directory: Final Backend/discovery-service
       run: mvn clean install
       
     - name: Build with Maven for interaction-service
-      working-directory: interaction-service
+      working-directory: Final Backend/interaction-service
       run: mvn clean install
 
     - name: Build with Maven for media-service
-      working-directory: media-service
+      working-directory: Final Backend/media-service
       run: mvn clean install
         
     - name: Build with Maven for post-service
-      working-directory: post-service
+      working-directory: Final Backend/post-service
       run: mvn clean install
         
     - name: Build with Maven for user-service
-      working-directory: user-service
+      working-directory: Final Backend/user-service
       run: mvn clean install
